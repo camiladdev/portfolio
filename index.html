@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Camila Diniz</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/logo1.ico" type="image/x-icon">
+</head>
+<body>
+
+  <!-- Menu fixo em todas as seções -->
+
+  <header>
+    <nav>
+      <span class="logo">Portfólio</span>
+      <ul>
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <button id="botao-tema" type="button" aria-label="Alternar entre modo claro e escuro">Modo escuro</button>
+    </nav>
+  </header>
+
+  <!-- SEÇÃO 1: SOBRE MIM -->
+  <section id="sobre">
+    <h2>Sobre mim</h2>
+    <div class="sobre-conteudo">
+
+      <img src="img/file.png" alt="Foto da aluna Camila Diniz" class="sobre-foto">
+
+      <div class="sobre-texto">
+        <p>
+          Olá! Meu nome é <strong>Camila Diniz</strong>,tenho 22 anos, sou natural do Rio de Janeiro e atualmente moro em Vitória da Conquista, Bahia. Sou apaixonada por tecnologia e estou em constante evolução profissional, cursando Bacharelado em Engenharia de Software pela UNINTER e Análise e Desenvolvimento de Sistemas.
+        </p>
+        <br>
+        <p>
+          Tenho construído minha base técnica trabalhando com tecnologias como HTML, CSS, JavaScript, React, Python e TypeScript, além de explorar o mundo das automações com n8n e Docker. Minha trajetória profissional é versátil: atuo também como professora de inglês e consultora de negócios, o que me desenvolveu uma forte habilidade de comunicação, gestão e resolução de problemas.
+        </p>
+        <br>
+        <p>
+          No meu tempo livre, gosto de equilibrar a rotina agitada com meus hobbies. Adoro assar pães em casa, acompanhar as corridas de Fórmula 1, ouvir música, assistir a filmes e mergulhar em narrativas jogando e mestrando RPG de mesa.
+        </p>
+    
+
+        <h3 style="margin-top:16px;">Hobbies e interesses</h3>
+        <ul class="hobbies-lista">
+          <li>RPG de Mesa: Participar e narrar aventuras e campanhas.</li>
+          <li>Panificação Artesanal: Dedicar o tempo livre para assar pães em casa.</li>
+          <li>Fórmula 1 e Automobilismo: Acompanhar o mundo das corridas, um esporte que envolve muita estratégia, trabalho em equipe, alta tecnologia e análise de dados constante.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO 2: FORMAÇÃO -->
+  <section id="formacao">
+    <h2>Formação</h2>
+
+    <!-- Bloco de formação acadêmica -->
+    <div class="formacao-bloco">
+      <h3>Bacharelado em Engenharia de Software</h3>
+      <span>Uninter · 2025 - Em Andamento</span>
+    </div>
+
+    <div class="formacao-bloco">
+      <h3>Tecnólogo em Análise e Desenvolvimento de Software</h3>
+      <span>UniFatecie · 2023 - Em Andamento</span>
+    </div>
+
+    <!-- Bloco de idiomas -->
+    <div class="formacao-bloco">
+      <h3>Idiomas</h3>
+      <ul>
+        <li>Inglês: Fluente / Nível profissional</li>
+        <li>Espanhol — Iniciante</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 3: PORTFÓLIO -->
+  <section id="portfolio">
+    <h2>Portfólio</h2>
+    <div class="portfolio-grid">
+
+      <!-- Card de projeto 1 -->
+      <div class="portfolio-card">
+        <h3>Chronos Pomodoro</h3>
+        <p>Aplicação web de produtividade focada na gestão de tempo através da técnica Pomodoro, desenvolvida para auxiliar no controle de ciclos de foco e pausas.</p>
+        <a href="https://github.com/camiladdev/chronos-pomodoro" target="_blank" rel="noopener noreferrer">Ver projeto →</a>
+      </div>
+
+      <!-- Card de projeto 2 -->
+      <div class="portfolio-card">
+        <h3>Game Pokémon</h3>
+        <p>Jogo interativo baseado em Pokémon, desenvolvido para aplicar conceitos práticos de lógica de programação, manipulação do DOM e eventos dinâmicos na interface do usuário.</p>
+        <a href="https://github.com/camiladdev/gamepokemon" target="_blank" rel="noopener noreferrer">Ver projeto →</a>
+      </div>
+
+      <!-- Card de projeto 3 -->
+      <div class="portfolio-card">
+        <h3>Dice Roller</h3>
+        <p>Aplicação web de rolagem de dados virtuais, ideal para auxiliar narradores e jogadores durante sessões e campanhas de RPG de mesa. O projeto foca na implementação de lógica de programação com JavaScript puro para a geração de números aleatórios e atualização dinâmica da interface.</p>
+        <a href="https://github.com/camiladdev/dice-roller" target="_blank" rel="noopener noreferrer">Ver projeto →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 4: CONTATO -->
+  <section id="contato">
+    <h2>Contato</h2>
+    <p style="margin-bottom: 18px;">Preencha o formulário abaixo para entrar em contato comigo.</p>
+
+    <form id="form-contato" novalidate>
+      <div>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+      </div>
+
+      <div>
+        <label for="email">E-mail</label>
+        <input type="text" id="email" name="email" placeholder="exemplo@dominio.com">
+      </div>
+
+      <div>
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..."></textarea>
+      </div>
+
+      <!-- Elemento usado pelo JS para mostrar mensagens de erro de validação -->
+      <p class="erro-mensagem" id="erro-mensagem"></p>
+
+      <button type="submit">Enviar mensagem</button>
+    </form>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>&copy; <span id="ano-atual"></span> Camila Diniz. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
